@@ -29,7 +29,7 @@ Use one or more blank lines to separate paragraphs.
 
 ## Typeface
 
-| ** Name/Sample**   | ** Markup **       |
+| **Name/Sample**   | ** Markup **       |
 |:------------------|:-------------------|
 |  _italic_         | ` _italic_ `       |
 |  **bold**         | ` *bold* `         |

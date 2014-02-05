@@ -11,32 +11,31 @@
 <tr><td>dl</td><td>title dir ~~lang~~</td></tr>
 <tr><td>dt</td><td>title dir lang</td></tr>
 <tr><td>em</td><td>
-The following is:
-<ul><li>A list
-</li><li>Of bulleted items
-<ol><li>This is a numbered sublist
-</li><li>Which is done by indenting further
+The following is:<br>
+<ul><li>A list<br>
+</li><li>Of bulleted items<br>
+<ol><li>This is a numbered sublist<br>
+</li><li>Which is done by indenting further<br>
 </li></ol><ul><li>And back to the main bulleted list</li></ul>
 
-</li><li>This is also a list
-</li><li>With a single leading space
-</li><li>Notice that it is rendered
-<ol><li>At the same levels
-</li><li>As the above lists.
-</li></ol><ul><li>Despite the different indentation levels.
-</li></ul></li></ul><ol><li>What does this do
+</li><li>This is also a list<br>
+</li><li>With a single leading space<br>
+</li><li>Notice that it is rendered<br>
+<ol><li>At the same levels<br>
+</li><li>As the above lists.<br>
+</li></ol><ul><li>Despite the different indentation levels.<br>
+</li></ul></li></ul><ol><li>What does this do<br>
 </li><li>Let's find out</li></ol>
 
-this should be a blockquote
-
-</li></ol><blockquote>is it working
+this should be a blockquote<br>
+<br>
+</li></ol><blockquote>is it working<br>
 am I EMPHASIZEDAZED</blockquote>
 
 </td></tr>
 <tr><td>font</td><td>
 
-<code>
-title dir lang face size color
+<code>title dir lang face size color
 </code>
 
 </td></tr>

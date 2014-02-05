@@ -40,7 +40,14 @@ am I EMPHASIZEDAZED</blockquote>
 
 </td></tr>
 <tr><td>h1</td><td>[surely at least this will work](http://www.yahoo.com) title dir lang</td></tr>
-<tr><td>h2</td><td>title dir lang</td></tr>
+<tr><td>h2</td><td>
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+</td></tr>
 <tr><td>h3</td><td>title dir lang</td></tr>
 <tr><td>h4</td><td>title dir lang</td></tr>
 <tr><td>h5</td><td>title dir lang</td></tr>

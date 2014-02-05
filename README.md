@@ -29,15 +29,15 @@ Use one or more blank lines to separate paragraphs.
 
 ## Typeface
 
-| **Name/Sample**   | ** Markup **       |
-|:------------------|:-------------------|
-|  _italic_         | ` _italic_ `       |
+|**Name/Sample**   | **Markup**       |
+|:-----------------|:-----------------|
+|  _italic_        | ` _italic_ `       |
 |  **bold**         | ` *bold* `         |
-|  ` code `         | `` `code` ``       |
-|  ` code `         | ` {{{code}}} `     |
+|  ` code `         | `` `code` ``     |
+|  ` code `        | ` {{{code}}} `     |
 |  <sup>super</sup>script  | ` ^super^script `  |
 |  <sub>sub</sub>script  | ` ,,sub,,script `  |
-| ~~strikeout~~     | ` ~~strikeout~~ `  |
+| ~~strikeout~~    | ` ~~strikeout~~ `  |
 
 You can mix these typefaces in some ways:
 
@@ -636,4 +636,3 @@ Note: The wiki accepts a subset of ISO-639 two letter language codes, where a fe
 </tbody></table>
 
 _The content on this page created by Google is licensed under the [Creative Commons Attribution 3.0 License](http://creativecommons.org/licenses/by/3.0/).  User-generated content is not included in this license._
-

@@ -6,9 +6,9 @@
 <tr><td>br</td><td>title dir lang</td></tr>
 <tr><td>blockquote</td><td>title dir lang</td></tr>
 <tr><td>code</td><td>title dir lang language ` [1] `</td></tr>
-<tr><td>dd</td><td>title dir **lang**</td></tr>
-<tr><td>div</td><td>title dir _lang_</td></tr>
-<tr><td>dl</td><td>title dir ~~lang~~</td></tr>
+<tr><td>dd</td><td>title dir <b>lang</b></td></tr>
+<tr><td>div</td><td>title dir <i>lang</i></td></tr>
+<tr><td>dl</td><td>title dir <s>lang</s></td></tr>
 <tr><td>dt</td><td>title dir lang</td></tr>
 <tr><td>em</td><td>
 The following is:<br>

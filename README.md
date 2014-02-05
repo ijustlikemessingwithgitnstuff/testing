@@ -337,7 +337,7 @@ The following HTML tags and attributes are currently supported:
 <tr><td>b</td><td>title dir lang</td></tr>
 <tr><td>br</td><td>title dir lang</td></tr>
 <tr><td>blockquote</td><td>title dir lang</td></tr>
-<tr><td>code</td><td>title dir lang language `` `[1]` ``</td></tr>
+<tr><td>code</td><td>title dir lang language `[1]`</td></tr>
 <tr><td>dd</td><td>title dir lang</td></tr>
 <tr><td>div</td><td>title dir lang</td></tr>
 <tr><td>dl</td><td>title dir lang</td></tr>

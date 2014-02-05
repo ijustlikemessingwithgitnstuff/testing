@@ -340,9 +340,16 @@ The following HTML tags and attributes are currently supported:
 <tr><td>code</td><td>title dir lang language <code>[1]</code></td></tr>
 <tr><td>dd</td><td>title dir *lang*</td></tr>
 <tr><td>div</td><td>title dir **lang**</td></tr>
-<tr><td>dl</td><td>title dir lang</td></tr>
-<tr><td>dt</td><td>title dir lang</td></tr>
-<tr><td>em</td><td>title dir lang</td></tr>
+<tr><td>dl</td><td>title dir <i>lang<i></td></tr>
+<tr><td>dt</td><td>title dir <b>lang</b></td></tr>
+<tr><td>em</td>
+<td>
+
+```
+title dir lang
+```
+
+</td></tr>
 <tr><td>font</td><td>title dir lang face size color</td></tr>
 <tr><td>h1</td><td>title dir lang</td></tr>
 <tr><td>h2</td><td>title dir lang</td></tr>

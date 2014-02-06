@@ -192,12 +192,12 @@ If you want to mention !WikiSyntax without it being autolinked, use an
 exclamation mark to prevent linking.
 ```
 
-WikiSyntax is identified and linked automatically
+[WikiSyntax](wiki/WikiSyntax) is identified and linked automatically
 
 Wikipage is not identified, so if you have a page named [Wikipage](wiki/Wikipage) you
 need to link it explicitly.
 
-If the WikiSyntax page is actually about reindeers, you can provide a
+If the [WikiSyntax](wiki/WikiSyntax) page is actually about reindeers, you can provide a
 description, so that people know you are actually linking to a page on
 [reindeer flotillas](wiki/WikiSyntax).
 
@@ -326,7 +326,7 @@ cells, including typeface formatting and links.
 # HTML support
 To aid in the presentation of a wiki page there is some support for HTML. HTML tags are only supported in wiki pages, not in page comments.
 
-HTML syntax can be used in conjunction with wiki syntax, but it is recommended against so where doing possible.<a href='Hidden comment: Also, avoid blank lines between list items.'></a>
+HTML syntax can be used in conjunction with wiki syntax, but it is recommended against doing so where possible.<a href='Hidden comment: Also, avoid blank lines between list items.'></a>
 
 The following HTML tags and attributes are currently supported:
 

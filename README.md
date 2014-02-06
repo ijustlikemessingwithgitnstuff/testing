@@ -301,12 +301,12 @@ You can easily link to issues and revisions using the following syntax.<br>
 
 <ul><li><code>r123</code> will be autolinked to the revision detail page for that revision in the current project.</li></ul>
 
-There is currently no way to disable this type of autolinking. See [issue 996](https://code.google.com/p/support/issues/detail?id=996).<br>
+There is currently no way to disable this type of autolinking. See <a href='https://code.google.com/p/support/issues/detail?id=996'>issue 996</a>.<br>
 <br>
 <pre><code>For example: Please add a comment on issue 123 rather than adding more review comments to r456. <br>
 </code></pre>
 
-Renders as: Please add a comment on [issue 123](https://code.google.com/p/support/issues/detail?id=123) rather than adding more review comments to [r456](https://code.google.com/p/support/source/detail?r=456).<br>
+Renders as: Please add a comment on <a href='https://code.google.com/p/support/issues/detail?id=123'>issue 123</a> rather than adding more review comments to <a href='https://code.google.com/p/support/source/detail?r=456'>r456</a>.<br>
 <br>
 <br>
 <h3>Links to external pages</h3>
@@ -475,7 +475,7 @@ Use <code>&lt;g:plusone&gt;&lt;/g:plusone&gt;</code> to add a <a href='http://ww
 <pre><code>&lt;g:plusone size="medium"&gt;&lt;/g:plusone&gt;<br>
 </code></pre>
 
-<script type='text/javascript' src='https://apis.google.com/js/plusone.js'></script><g:plusone size='medium'></g:plusone><br>
+(TODO: Link to Google+ page.)<br>
 <br>
 The count, size, and href parameters are supported; see <a href='http://code.google.com/apis/+1button/'>http://code.google.com/apis/+1button/</a> for documentation.<br>
 <br>

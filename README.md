@@ -1,4 +1,12 @@
-~~uniquenessy~~
+this is code:
+
+```
+lalala
+
+dododo
+
+huehuhehueuh
+```
 
 
 <table border='1'>
@@ -11,7 +19,7 @@
 <tr><td>code</td><td>title dir lang language <code>[1]</code></td></tr>
 <tr><td>dd</td><td>title dir <b>lang</b></td></tr>
 <tr><td>div</td><td>title dir <i>lang</i></td></tr>
-<tr><td>dl</td><td>title dir <s>lang</s></td></tr>
+<tr><td>dl</td><td>title dir <del>lang</del></td></tr>
 <tr><td>dt</td><td>title dir lang</td></tr>
 <tr><td>em</td><td>
 The following is:<br>
@@ -38,7 +46,9 @@ am I EMPHASIZEDAZED</blockquote>
 </td></tr>
 <tr><td>font</td><td>
 
-<code>title dir lang face size color
+<code>title dir lang<br>
+face size<br>
+color<br>
 </code>
 
 </td></tr>
@@ -53,7 +63,17 @@ am I EMPHASIZEDAZED</blockquote>
 <tr><td> 1940        </td><td> -2                       </td><td> 40                        </td></tr></tbody></table>
 
 </td></tr>
-<tr><td>h3</td><td>title dir lang</td></tr>
+<tr><td>h3</td><td>
+
+<code><br>
+title<br>
+dir<br>
+&lt;code&gt;<br>
+<br>
+<br>
+lang<br>
+</code>
+</td></tr>
 <tr><td>h4</td><td>title dir lang</td></tr>
 <tr><td>h5</td><td>title dir lang</td></tr>
 <tr><td>i</td><td>title dir lang</td></tr>
@@ -117,58 +137,58 @@ Use one or more blank lines to separate paragraphs.<br>
 <tr><td>  <code>code</code>     </td><td> <code>{{{code}}}</code>     </td></tr>
 <tr><td>  <sup>super</sup>script  </td><td> <code>^super^script</code>  </td></tr>
 <tr><td>  <sub>sub</sub>script  </td><td> <code>,,sub,,script</code>  </td></tr>
-<tr><td> <s>strikeout</s>    </td><td> <code>~~strikeout~~</code>  </td></tr></tbody></table>
+<tr><td> <del>strikeout</del>   </td><td> <code>~~strikeout~~</code>  </td></tr></tbody></table>
 
 You can mix these typefaces in some ways:<br>
 <br>
 <table><thead><th>       <b>Markup</b>                    </th><th>        <b>Result</b>                 </th></thead><tbody>
 <tr><td> <code>_*bold* in italics_</code>             </td><td> <i><b>bold</b> in italics</i>             </td></tr>
 <tr><td> <code>*_italics_ in bold*</code>             </td><td> <b><i>italics</i> in bold</b>             </td></tr>
-<tr><td> <code>*~~strike~~ works too*</code>          </td><td> <b><s>strike</s> works too</b>          </td></tr>
-<tr><td> <code>~~as well as _this_ way round~~</code> </td><td> <s>as well as <i>this</i> way round</s> </td></tr></tbody></table>
+<tr><td> <code>*~~strike~~ works too*</code>          </td><td> <b><del>strike</del> works too</b>          </td></tr>
+<tr><td> <code>~~as well as _this_ way round~~</code> </td><td> <del>as well as <i>this</i> way round</del> </td></tr></tbody></table>
 
 ## Code<br>
 <br>
 If you have a multiline code block that you want to display verbatim,<br>
 use the multiline code delimiter:<br>
 <br>
-<code>{{{
-def fib(n):
-  if n == 0 or n == 1:
-    return n
-  else:
-    # This recursion is not good for large numbers.
-    return fib(n-1) + fib(n-2)
-}}}
+<code>{{{<br>
+def fib(n):<br>
+  if n == 0 or n == 1:<br>
+    return n<br>
+  else:<br>
+    # This recursion is not good for large numbers.<br>
+    return fib(n-1) + fib(n-2)<br>
+}}}<br>
 </code>
 
 Which results in:<br>
 <br>
-<code>def fib(n):
-  if n == 0 or n == 1:
-    return n
-  else:
-    # This recursion is not good for large numbers.
-    return fib(n-1) + fib(n-2)
+<code>def fib(n):<br>
+  if n == 0 or n == 1:<br>
+    return n<br>
+  else:<br>
+    # This recursion is not good for large numbers.<br>
+    return fib(n-1) + fib(n-2)<br>
 </code>
 
-For more control over the syntax higlighting, the <code><code></code> tag allows you to specify a file extension:<br>
+For more control over the syntax higlighting, the <code>&lt;code&gt;</code> tag allows you to specify a file extension:<br>
 <br>
-<code><code language="xml">
-<hello target="world"/>
-</code>
+<code>&lt;code language="xml"&gt;<br>
+&lt;hello target="world"/&gt;<br>
+&lt;/code&gt;<br>
 </code>
 
-To disable highlighting entirely, use the <code><pre></code> tag.<br>
+To disable highlighting entirely, use the <code>&lt;pre&gt;</code> tag.<br>
 <br>
 ## Headings<br>
 <br>
-<code>= Heading =
-== Subheading ==
-=== Level 3 ===
-==== Level 4 ====
-===== Level 5 =====
-====== Level 6 ======
+<code>= Heading =<br>
+== Subheading ==<br>
+=== Level 3 ===<br>
+==== Level 4 ====<br>
+===== Level 5 =====<br>
+====== Level 6 ======<br>
 </code>
 
 ## Dividers<br>
@@ -182,19 +202,19 @@ Google Code wikis support both bulleted and numbered lists. A list<br>
 must be indented at least one space to be recognized as such. You can<br>
 also nest lists one within the other by appropriate use of indenting:<br>
 <br>
-<code>The following is:
-  * A list
-  * Of bulleted items
-    # This is a numbered sublist
-    # Which is done by indenting further
-  * And back to the main bulleted list
-
- * This is also a list
- * With a single leading space
- * Notice that it is rendered
-  # At the same levels
-  # As the above lists.
- * Despite the different indentation levels.
+<code>The following is:<br>
+  * A list<br>
+  * Of bulleted items<br>
+    # This is a numbered sublist<br>
+    # Which is done by indenting further<br>
+  * And back to the main bulleted list<br>
+<br>
+ * This is also a list<br>
+ * With a single leading space<br>
+ * Notice that it is rendered<br>
+  # At the same levels<br>
+  # As the above lists.<br>
+ * Despite the different indentation levels.<br>
 </code>
 
 The following is:<br>
@@ -217,11 +237,11 @@ Block quotes place emphasis on a particular extract of text in your<br>
 page. Block quotes are created by indenting a paragraph by at least<br>
 one space:<br>
 <br>
-<code>Someone once said:
-
-  This sentence will be quoted in the future as the canonical example
-  of a quote that is so important that it should be visually separate
-  from the rest of the text in which it appears.
+<code>Someone once said:<br>
+<br>
+  This sentence will be quoted in the future as the canonical example<br>
+  of a quote that is so important that it should be visually separate<br>
+  from the rest of the text in which it appears.<br>
 </code>
 
 Someone once said:<br>
@@ -251,17 +271,17 @@ form. When you create the target page,<br>
 the link will become a normal hyperlink for all viewers of<br>
 the page.<br>
 <br>
-<code>WikiSyntax is identified and linked automatically
-
-Wikipage is not identified, so if you have a page named [Wikipage] you
-need to link it explicitly.
-
-If the WikiSyntax page is actually about reindeers, you can provide a
-description, so that people know you are actually linking to a page on
-[WikiSyntax reindeer flotillas].
-
-If you want to mention !WikiSyntax without it being autolinked, use an
-exclamation mark to prevent linking.
+<code>WikiSyntax is identified and linked automatically<br>
+<br>
+Wikipage is not identified, so if you have a page named [Wikipage] you<br>
+need to link it explicitly.<br>
+<br>
+If the WikiSyntax page is actually about reindeers, you can provide a<br>
+description, so that people know you are actually linking to a page on<br>
+[WikiSyntax reindeer flotillas].<br>
+<br>
+If you want to mention !WikiSyntax without it being autolinked, use an<br>
+exclamation mark to prevent linking.<br>
 </code>
 
 <a href='wiki/WikiSyntax'>WikiSyntax</a> is identified and linked automatically<br>
@@ -281,7 +301,7 @@ exclamation mark to prevent linking.<br>
 Each heading defines a HTML anchor with the same name as the heading, but with spaces replaced by underscores. You can<br>
 create a link to a specific heading on a page like this:<br>
 <br>
-<code>[WikiSyntax#Wiki-style_markup]
+<code>[WikiSyntax#Wiki-style_markup]<br>
 </code>
 
 And it will render as: <a href='wiki/WikiSyntax#Wiki-style_markup'>WikiSyntax#Wiki-style_markup</a>.<br>
@@ -298,7 +318,7 @@ You can easily link to issues and revisions using the following syntax.<br>
 
 There is currently no way to disable this type of autolinking. See [issue 996](https://code.google.com/p/support/issues/detail?id=996).<br>
 <br>
-<code>For example: Please add a comment on issue 123 rather than adding more review comments to r456. 
+<code>For example: Please add a comment on issue 123 rather than adding more review comments to r456. <br>
 </code>
 
 Renders as: Please add a comment on [issue 123](https://code.google.com/p/support/issues/detail?id=123) rather than adding more review comments to [r456](https://code.google.com/p/support/source/detail?r=456).<br>
@@ -309,24 +329,24 @@ Renders as: Please add a comment on [issue 123](https://code.google.com/p/suppor
 You can of course link to external pages from your own wiki pages,<br>
 using a syntax similar to that for internal links:<br>
 <br>
-<code>Plain URLs such as http://www.google.com/ or ftp://ftp.kernel.org/ are
-automatically made into links.
-
-You can also provide some descriptive text. For example, the following
-link points to the [http://www.google.com Google home page].
-
-If your link points to an image, it will get inserted as an image tag
-into the page:
-
-http://code.google.com/images/code_sm.png
-
-You can also make the image into a link, by setting the image URL as
-the description of the URL you want to link:
-
-[http://code.google.com/ http://code.google.com/images/code_sm.png]
+<code>Plain URLs such as http://www.google.com/ or ftp://ftp.kernel.org/ are<br>
+automatically made into links.<br>
+<br>
+You can also provide some descriptive text. For example, the following<br>
+link points to the [http://www.google.com Google home page].<br>
+<br>
+If your link points to an image, it will get inserted as an image tag<br>
+into the page:<br>
+<br>
+http://code.google.com/images/code_sm.png<br>
+<br>
+You can also make the image into a link, by setting the image URL as<br>
+the description of the URL you want to link:<br>
+<br>
+[http://code.google.com/ http://code.google.com/images/code_sm.png]<br>
 </code>
 
-Plain URLs such as <a href='http://www.google.com/'></a> or <a href='ftp://ftp.kernel.org/'></a> are<br>
+Plain URLs such as <a href='http://www.google.com/'>http://www.google.com/</a> or <a href='ftp://ftp.kernel.org/'>ftp://ftp.kernel.org/</a> are<br>
 automatically made into links.<br>
 <br>
 You can also provide some descriptive text. For example, the following<br>
@@ -335,7 +355,7 @@ link points to the <a href='http://www.google.com'>Google home page</a>.<br>
 You can also make the image into a link, by setting the image URL as<br>
 the description of the URL you want to link:<br>
 <br>
-<code>[http://code.google.com/ http://code.google.com/images/code_sm.png]
+<code>[http://code.google.com/ http://code.google.com/images/code_sm.png]<br>
 </code>
 
 <a href='http://code.google.com/'><img src='http://code.google.com/images/code_sm.png' /></a>
@@ -347,17 +367,17 @@ If your link points to an image (that is, if it ends in <code>.png</code>,<br>
 <code>.gif</code>, <code>.jpg</code> or <code>.jpeg</code>), it will get inserted as an image into the<br>
 page:<br>
 <br>
-<code>http://code.google.com/images/code_sm.png
+<code>http://code.google.com/images/code_sm.png<br>
 </code>
 
-<a href='http://code.google.com/images/code_sm.png'></a>
+<a href='http://code.google.com/images/code_sm.png'>http://code.google.com/images/code_sm.png</a>
 
 If the image is produced by a server-side script, you may need to add a nonsense query string parameter to the end so that the URL ends with a supported image filename extension.<br>
 <br>
-<code>http://chart.apis.google.com/chart?chs=200x125&chd=t:48.14,33.79,19.77|83.18,18.73,12.04&cht=bvg&nonsense=something_that_ends_with.png
+<code>http://chart.apis.google.com/chart?chs=200x125&amp;chd=t:48.14,33.79,19.77|83.18,18.73,12.04&amp;cht=bvg&amp;nonsense=something_that_ends_with.png<br>
 </code>
 
-<a href='http://chart.apis.google.com/chart?chs=200x125&chd=t:48.14,33.79,19.77|83.18,18.73,12.04&cht=bvg&nonsense=something_that_ends_with.png'></a>
+<a href='http://chart.apis.google.com/chart?chs=200x125&chd=t:48.14,33.79,19.77|83.18,18.73,12.04&cht=bvg&nonsense=something_that_ends_with.png'>http://chart.apis.google.com/chart?chs=200x125&amp;chd=t:48.14,33.79,19.77|83.18,18.73,12.04&amp;cht=bvg&amp;nonsense=something_that_ends_with.png</a>
 
 ## Tables<br>
 <br>
@@ -365,12 +385,12 @@ Tables are created by entering the content of each cell separated by<br>
 <code>||</code> delimiters. You can insert other inline wiki syntax in table<br>
 cells, including typeface formatting and links.<br>
 <br>
-<code>|| *Year* || *Temperature (low)* || *Temperature (high)* ||
-|| 1900 || -10 || 25 ||
-|| 1910 || -15 || 30 ||
-|| 1920 || -10 || 32 ||
-|| 1930 || _N/A_ || _N/A_ ||
-|| 1940 || -2 || 40 ||
+<code>|| *Year* || *Temperature (low)* || *Temperature (high)* ||<br>
+|| 1900 || -10 || 25 ||<br>
+|| 1910 || -15 || 30 ||<br>
+|| 1920 || -10 || 32 ||<br>
+|| 1930 || _N/A_ || _N/A_ ||<br>
+|| 1940 || -2 || 40 ||<br>
 </code>
 
 <table><thead><th> <b>Year</b> </th><th> <b>Temperature (low)</b> </th><th> <b>Temperature (high)</b> </th></thead><tbody>
@@ -404,7 +424,7 @@ The following HTML tags and attributes are currently supported:<br>
 <tr><td>code</td><td>title dir lang language <code>[1]</code></td></tr>
 <tr><td>dd</td><td>title dir <b>lang</b></td></tr>
 <tr><td>div</td><td>title dir <i>lang</i></td></tr>
-<tr><td>dl</td><td>title dir <s>lang</s></td></tr>
+<tr><td>dl</td><td>title dir <del>lang</del></td></tr>
 <tr><td>dt</td><td>title dir lang</td></tr>
 <tr><td>em</td><td>
 The following is:<br>
@@ -424,11 +444,11 @@ The following is:<br>
 </td></tr>
 <tr><td>font</td><td>
 
-<code>title dir lang face size color
+<code>title dir lang face size color<br>
 </code>
 
 </td></tr>
-<tr><td>h1</td><td><a href='wiki/surely'>at least this will work</a>(<a href='http://www.yahoo.com'></a>) title dir lang</td></tr>
+<tr><td>h1</td><td><a href='wiki/surely'>at least this will work</a>(<a href='http://www.yahoo.com'>http://www.yahoo.com</a>) title dir lang</td></tr>
 <tr><td>h2</td><td>title dir lang</td></tr>
 <tr><td>h3</td><td>title dir lang</td></tr>
 <tr><td>h4</td><td>title dir lang</td></tr>
@@ -467,8 +487,8 @@ HTML tags can be escaped as shown in the table below:<br>
 <table border='1'>
 <thead><th>Markup</th><th>Result</th></thead>
 <tbody>
-<tr><td> <code>`<hr>`</code></td><td><code><hr></code></td></tr>
-<tr><td> <code>{{{<hr>}}}</code></td><td><code><hr></code></td></tr>
+<tr><td> <code>`&lt;hr&gt;`</code></td><td><code>&lt;hr&gt;</code></td></tr>
+<tr><td> <code>{{{&lt;hr&gt;}}}</code></td><td><code>&lt;hr&gt;</code></td></tr>
 </tbody>
 </table>
 
@@ -478,21 +498,21 @@ HTML tags can be escaped as shown in the table below:<br>
 <br>
 The wiki supports embedded comments to help explain the contents of a wiki page. Anything inside the comment block is removed from the rendered page, but is visible when editing or viewing the source for that page.<br>
 <br>
-<code><wiki:comment>
-This text will be removed from the rendered page.
-</wiki:comment>
+<code>&lt;wiki:comment&gt;<br>
+This text will be removed from the rendered page.<br>
+&lt;/wiki:comment&gt;<br>
 </code>
 
 # +1 Button<br>
 <br>
-Use <code><g:plusone></g:plusone></code> to add a <a href='http://www.google.com/+1/button/'>+1 button</a> to the page. Example:<br>
+Use <code>&lt;g:plusone&gt;&lt;/g:plusone&gt;</code> to add a <a href='http://www.google.com/+1/button/'>+1 button</a> to the page. Example:<br>
 <br>
-<code><g:plusone size="medium"></g:plusone>
+<code>&lt;g:plusone size="medium"&gt;&lt;/g:plusone&gt;<br>
 </code>
 
 <script type='text/javascript' src='https://apis.google.com/js/plusone.js'></script><g:plusone size='medium'></g:plusone><br>
 <br>
-The count, size, and href parameters are supported; see <a href='http://code.google.com/apis/+1button/'></a> for documentation.<br>
+The count, size, and href parameters are supported; see <a href='http://code.google.com/apis/+1button/'>http://code.google.com/apis/+1button/</a> for documentation.<br>
 <br>
 <br>
 g</td></tr>      </tbody>

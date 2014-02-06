@@ -1,14 +1,3 @@
-this is code:
-
-```
-lalala
-
-dododo
-
-huehuhehueuh
-```
-
-
 <table border='1'>
 <thead><th>HTML Tag</th><th>Supported Attributes</th></thead>
 <tbody>
@@ -46,10 +35,10 @@ am I EMPHASIZEDAZED</blockquote>
 </td></tr>
 <tr><td>font</td><td>
 
-<code>title dir lang<br>
+<pre><code>title dir lang<br>
 face size<br>
 color<br>
-</code>
+</code></pre>
 
 </td></tr>
 <tr><td>h1</td><td><a href='http://www.yahoo.com'>surely *at* ~~least~~ this will work</a> title dir lang</td></tr>
@@ -65,14 +54,14 @@ color<br>
 </td></tr>
 <tr><td>h3</td><td>
 
-<code><br>
+<pre><code><br>
 title<br>
 dir<br>
 &lt;code&gt;<br>
 <br>
 <br>
 lang<br>
-</code>
+</code></pre>
 </td></tr>
 <tr><td>h4</td><td>title dir lang</td></tr>
 <tr><td>h5</td><td>title dir lang</td></tr>
@@ -152,7 +141,7 @@ You can mix these typefaces in some ways:<br>
 If you have a multiline code block that you want to display verbatim,<br>
 use the multiline code delimiter:<br>
 <br>
-<code>{{{<br>
+<pre><code>{{{<br>
 def fib(n):<br>
   if n == 0 or n == 1:<br>
     return n<br>
@@ -160,36 +149,36 @@ def fib(n):<br>
     # This recursion is not good for large numbers.<br>
     return fib(n-1) + fib(n-2)<br>
 }}}<br>
-</code>
+</code></pre>
 
 Which results in:<br>
 <br>
-<code>def fib(n):<br>
+<pre><code>def fib(n):<br>
   if n == 0 or n == 1:<br>
     return n<br>
   else:<br>
     # This recursion is not good for large numbers.<br>
     return fib(n-1) + fib(n-2)<br>
-</code>
+</code></pre>
 
 For more control over the syntax higlighting, the <code>&lt;code&gt;</code> tag allows you to specify a file extension:<br>
 <br>
-<code>&lt;code language="xml"&gt;<br>
+<pre><code>&lt;code language="xml"&gt;<br>
 &lt;hello target="world"/&gt;<br>
 &lt;/code&gt;<br>
-</code>
+</code></pre>
 
 To disable highlighting entirely, use the <code>&lt;pre&gt;</code> tag.<br>
 <br>
 ## Headings<br>
 <br>
-<code>= Heading =<br>
+<pre><code>= Heading =<br>
 == Subheading ==<br>
 === Level 3 ===<br>
 ==== Level 4 ====<br>
 ===== Level 5 =====<br>
 ====== Level 6 ======<br>
-</code>
+</code></pre>
 
 ## Dividers<br>
 <br>
@@ -202,7 +191,7 @@ Google Code wikis support both bulleted and numbered lists. A list<br>
 must be indented at least one space to be recognized as such. You can<br>
 also nest lists one within the other by appropriate use of indenting:<br>
 <br>
-<code>The following is:<br>
+<pre><code>The following is:<br>
   * A list<br>
   * Of bulleted items<br>
     # This is a numbered sublist<br>
@@ -215,7 +204,7 @@ also nest lists one within the other by appropriate use of indenting:<br>
   # At the same levels<br>
   # As the above lists.<br>
  * Despite the different indentation levels.<br>
-</code>
+</code></pre>
 
 The following is:<br>
 <ul><li>A list<br>
@@ -237,12 +226,12 @@ Block quotes place emphasis on a particular extract of text in your<br>
 page. Block quotes are created by indenting a paragraph by at least<br>
 one space:<br>
 <br>
-<code>Someone once said:<br>
+<pre><code>Someone once said:<br>
 <br>
   This sentence will be quoted in the future as the canonical example<br>
   of a quote that is so important that it should be visually separate<br>
   from the rest of the text in which it appears.<br>
-</code>
+</code></pre>
 
 Someone once said:<br>
 <br>
@@ -271,7 +260,7 @@ form. When you create the target page,<br>
 the link will become a normal hyperlink for all viewers of<br>
 the page.<br>
 <br>
-<code>WikiSyntax is identified and linked automatically<br>
+<pre><code>WikiSyntax is identified and linked automatically<br>
 <br>
 Wikipage is not identified, so if you have a page named [Wikipage] you<br>
 need to link it explicitly.<br>
@@ -282,7 +271,7 @@ description, so that people know you are actually linking to a page on<br>
 <br>
 If you want to mention !WikiSyntax without it being autolinked, use an<br>
 exclamation mark to prevent linking.<br>
-</code>
+</code></pre>
 
 <a href='wiki/WikiSyntax'>WikiSyntax</a> is identified and linked automatically<br>
 <br>
@@ -301,8 +290,8 @@ exclamation mark to prevent linking.<br>
 Each heading defines a HTML anchor with the same name as the heading, but with spaces replaced by underscores. You can<br>
 create a link to a specific heading on a page like this:<br>
 <br>
-<code>[WikiSyntax#Wiki-style_markup]<br>
-</code>
+<pre><code>[WikiSyntax#Wiki-style_markup]<br>
+</code></pre>
 
 And it will render as: <a href='wiki/WikiSyntax#Wiki-style_markup'>WikiSyntax#Wiki-style_markup</a>.<br>
 <br>
@@ -318,8 +307,8 @@ You can easily link to issues and revisions using the following syntax.<br>
 
 There is currently no way to disable this type of autolinking. See [issue 996](https://code.google.com/p/support/issues/detail?id=996).<br>
 <br>
-<code>For example: Please add a comment on issue 123 rather than adding more review comments to r456. <br>
-</code>
+<pre><code>For example: Please add a comment on issue 123 rather than adding more review comments to r456. <br>
+</code></pre>
 
 Renders as: Please add a comment on [issue 123](https://code.google.com/p/support/issues/detail?id=123) rather than adding more review comments to [r456](https://code.google.com/p/support/source/detail?r=456).<br>
 <br>
@@ -329,7 +318,7 @@ Renders as: Please add a comment on [issue 123](https://code.google.com/p/suppor
 You can of course link to external pages from your own wiki pages,<br>
 using a syntax similar to that for internal links:<br>
 <br>
-<code>Plain URLs such as http://www.google.com/ or ftp://ftp.kernel.org/ are<br>
+<pre><code>Plain URLs such as http://www.google.com/ or ftp://ftp.kernel.org/ are<br>
 automatically made into links.<br>
 <br>
 You can also provide some descriptive text. For example, the following<br>
@@ -344,7 +333,7 @@ You can also make the image into a link, by setting the image URL as<br>
 the description of the URL you want to link:<br>
 <br>
 [http://code.google.com/ http://code.google.com/images/code_sm.png]<br>
-</code>
+</code></pre>
 
 Plain URLs such as <a href='http://www.google.com/'>http://www.google.com/</a> or <a href='ftp://ftp.kernel.org/'>ftp://ftp.kernel.org/</a> are<br>
 automatically made into links.<br>
@@ -355,8 +344,8 @@ link points to the <a href='http://www.google.com'>Google home page</a>.<br>
 You can also make the image into a link, by setting the image URL as<br>
 the description of the URL you want to link:<br>
 <br>
-<code>[http://code.google.com/ http://code.google.com/images/code_sm.png]<br>
-</code>
+<pre><code>[http://code.google.com/ http://code.google.com/images/code_sm.png]<br>
+</code></pre>
 
 <a href='http://code.google.com/'><img src='http://code.google.com/images/code_sm.png' /></a>
 
@@ -367,17 +356,17 @@ If your link points to an image (that is, if it ends in <code>.png</code>,<br>
 <code>.gif</code>, <code>.jpg</code> or <code>.jpeg</code>), it will get inserted as an image into the<br>
 page:<br>
 <br>
-<code>http://code.google.com/images/code_sm.png<br>
-</code>
+<pre><code>http://code.google.com/images/code_sm.png<br>
+</code></pre>
 
-<a href='http://code.google.com/images/code_sm.png'>http://code.google.com/images/code_sm.png</a>
+<img src='http://code.google.com/images/code_sm.png' />
 
 If the image is produced by a server-side script, you may need to add a nonsense query string parameter to the end so that the URL ends with a supported image filename extension.<br>
 <br>
-<code>http://chart.apis.google.com/chart?chs=200x125&amp;chd=t:48.14,33.79,19.77|83.18,18.73,12.04&amp;cht=bvg&amp;nonsense=something_that_ends_with.png<br>
-</code>
+<pre><code>http://chart.apis.google.com/chart?chs=200x125&amp;chd=t:48.14,33.79,19.77|83.18,18.73,12.04&amp;cht=bvg&amp;nonsense=something_that_ends_with.png<br>
+</code></pre>
 
-<a href='http://chart.apis.google.com/chart?chs=200x125&chd=t:48.14,33.79,19.77|83.18,18.73,12.04&cht=bvg&nonsense=something_that_ends_with.png'>http://chart.apis.google.com/chart?chs=200x125&amp;chd=t:48.14,33.79,19.77|83.18,18.73,12.04&amp;cht=bvg&amp;nonsense=something_that_ends_with.png</a>
+<img src='http://chart.apis.google.com/chart?chs=200x125&chd=t:48.14,33.79,19.77|83.18,18.73,12.04&cht=bvg&nonsense=something_that_ends_with.png' />
 
 ## Tables<br>
 <br>
@@ -385,13 +374,13 @@ Tables are created by entering the content of each cell separated by<br>
 <code>||</code> delimiters. You can insert other inline wiki syntax in table<br>
 cells, including typeface formatting and links.<br>
 <br>
-<code>|| *Year* || *Temperature (low)* || *Temperature (high)* ||<br>
+<pre><code>|| *Year* || *Temperature (low)* || *Temperature (high)* ||<br>
 || 1900 || -10 || 25 ||<br>
 || 1910 || -15 || 30 ||<br>
 || 1920 || -10 || 32 ||<br>
 || 1930 || _N/A_ || _N/A_ ||<br>
 || 1940 || -2 || 40 ||<br>
-</code>
+</code></pre>
 
 <table><thead><th> <b>Year</b> </th><th> <b>Temperature (low)</b> </th><th> <b>Temperature (high)</b> </th></thead><tbody>
 <tr><td> 1900        </td><td> -10                      </td><td> 25                        </td></tr>
@@ -444,8 +433,8 @@ The following is:<br>
 </td></tr>
 <tr><td>font</td><td>
 
-<code>title dir lang face size color<br>
-</code>
+<pre><code>title dir lang face size color<br>
+</code></pre>
 
 </td></tr>
 <tr><td>h1</td><td><a href='wiki/surely'>at least this will work</a>(<a href='http://www.yahoo.com'>http://www.yahoo.com</a>) title dir lang</td></tr>
@@ -498,17 +487,17 @@ HTML tags can be escaped as shown in the table below:<br>
 <br>
 The wiki supports embedded comments to help explain the contents of a wiki page. Anything inside the comment block is removed from the rendered page, but is visible when editing or viewing the source for that page.<br>
 <br>
-<code>&lt;wiki:comment&gt;<br>
+<pre><code>&lt;wiki:comment&gt;<br>
 This text will be removed from the rendered page.<br>
 &lt;/wiki:comment&gt;<br>
-</code>
+</code></pre>
 
 # +1 Button<br>
 <br>
 Use <code>&lt;g:plusone&gt;&lt;/g:plusone&gt;</code> to add a <a href='http://www.google.com/+1/button/'>+1 button</a> to the page. Example:<br>
 <br>
-<code>&lt;g:plusone size="medium"&gt;&lt;/g:plusone&gt;<br>
-</code>
+<pre><code>&lt;g:plusone size="medium"&gt;&lt;/g:plusone&gt;<br>
+</code></pre>
 
 <script type='text/javascript' src='https://apis.google.com/js/plusone.js'></script><g:plusone size='medium'></g:plusone><br>
 <br>

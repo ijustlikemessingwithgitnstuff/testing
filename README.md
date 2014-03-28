@@ -192,12 +192,12 @@ If you want to mention !WikiSyntax without it being autolinked, use an
 exclamation mark to prevent linking.
 ```
 
-[WikiSyntax](wiki/WikiSyntax) is identified and linked automatically
+WikiSyntax is identified and linked automatically
 
 Wikipage is not identified, so if you have a page named [Wikipage](wiki/Wikipage) you
 need to link it explicitly.
 
-If the [WikiSyntax](wiki/WikiSyntax) page is actually about reindeers, you can provide a
+If the WikiSyntax page is actually about reindeers, you can provide a
 description, so that people know you are actually linking to a page on
 [reindeer flotillas](wiki/WikiSyntax).
 
@@ -225,13 +225,13 @@ You can easily link to issues and revisions using the following syntax.
 
   * ` r123 ` will be autolinked to the revision detail page for that revision in the current project.
 
-There is currently no way to disable this type of autolinking. See [issue 996](https://code.google.com/p/support/issues/detail?id=996).
+There is currently no way to disable this type of autolinking. See issue 996 (on Google Code).
 
 ```
 For example: Please add a comment on issue 123 rather than adding more review comments to r456. 
 ```
 
-Renders as: Please add a comment on [issue 123](https://code.google.com/p/support/issues/detail?id=123) rather than adding more review comments to [r456](https://code.google.com/p/support/source/detail?r=456).
+Renders as: Please add a comment on issue 123 (on Google Code) rather than adding more review comments to r456 (on Google Code).
 
 
 ### Links to external pages

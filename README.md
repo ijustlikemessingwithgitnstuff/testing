@@ -2,7 +2,7 @@
 
 (TODO: Add table of contents.)
 
-## Header2 mistmatched sides
+#### Tables (mistmatched header sides)
 
 Paragraph.
 
@@ -29,7 +29,7 @@ You can mix these typefaces in some ways:
 | ` *~~strike~~ works too* `          | **~~strike~~ works too**          |
 | ` ~~as well as _this_ way round~~ ` | ~~as well as _this_ way round~~   |
 
-IN HTML
+**IN HTML**
 
 <span>
 Tables:<br>
@@ -52,7 +52,7 @@ You can mix these typefaces in some ways:<br>
 <tr><td> <code>~~as well as _this_ way round~~</code> </td><td> <del>as well as <i>this</i> way round</del> </td></tr>
 </span></tbody></table>
 
-### Code (mismatched header sides again)
+#### Code (mismatched header sides again)
 
 ```
 {{{
@@ -82,7 +82,12 @@ def fib(n):
 </code>
 ```
 
-IN HTML
+```xml
+
+<hello target="world"/>
+```
+
+**IN HTML**
 
 <span>
 <pre><code>{{{<br>
@@ -109,4 +114,162 @@ Which results in:<br>
 &lt;hello target="world"/&gt;<br>
 &lt;/code&gt;<br>
 </code></pre>
+
+<pre><code><br>
+&lt;hello target="world"/&gt;<br>
+</code></pre>
 </span>
+
+==== Lists
+
+The following is:
+  * A list
+  * Of bulleted items
+    1. This is a numbered sublist
+    1. Which is done by indenting further
+  * And back to the main bulleted list
+
+  * This is also a list
+  * With a single leading space
+  * Notice that it is rendered
+    1. At the same levels
+    1. As the above lists.
+  * Despite the different indentation levels.
+
+> Blockquotes are seen as lists. Time to nest:
+> > Nested!
+
+> Okay back.
+
+**IN HTML**
+
+<span>
+The following is:<br>
+<ul><li>A list<br>
+</li><li>Of bulleted items<br>
+<ol><li>This is a numbered sublist<br>
+</li><li>Which is done by indenting further<br>
+</li></ol></li><li>And back to the main bulleted list</li></ul>
+
+<ul><li>This is also a list<br>
+</li><li>With a single leading space<br>
+</li><li>Notice that it is rendered<br>
+<ol><li>At the same levels<br>
+</li><li>As the above lists.<br>
+</li></ol></li><li>Despite the different indentation levels.</li></ul>
+
+<blockquote>Blockquotes are seen as lists. Time to nest:<br>
+<blockquote>Nested!<br>
+</blockquote>Okay back.<br>
+</span></blockquote>
+
+==== Links
+
+A LittleLink[?](wiki/TestPage)
+
+[TestPage](wiki/TestPage) is linked automatically.
+
+http://www.google.com/
+
+[Google home page](http://www.google.com)
+
+[![](https://www.google.com/images/srpr/logo11w.png)](http://www.google.com)
+
+![https://www.google.com/images/srpr/logo11w.png](https://www.google.com/images/srpr/logo11w.png)
+
+[An image](https://www.google.com/images/srpr/logo11w.png)
+
+![![](https://www.google.com/images/srpr/logo11w.png)](https://www.google.com/images/srpr/logo11w.png)
+
+**IN HTML**
+
+<span>
+A LittleLink<a href='wiki/TestPage'>?</a>
+
+<a href='wiki/TestPage'>TestPage</a> is linked automatically.<br>
+<br>
+<a href='http://www.google.com/'>http://www.google.com/</a>
+
+<a href='http://www.google.com'>Google home page</a>
+
+<a href='http://www.google.com'><img src='https://www.google.com/images/srpr/logo11w.png' /></a>
+
+<img src='https://www.google.com/images/srpr/logo11w.png' />
+
+<a href='https://www.google.com/images/srpr/logo11w.png'>An image</a>
+
+<a href='https://www.google.com/images/srpr/logo11w.png'><img src='https://www.google.com/images/srpr/logo11w.png' /></a>
+</span>
+
+==== Issues
+
+This is [issue 123](https://code.google.com/p/test/issues/detail?id=123), auto-linked.
+This would be [issue 456](https://code.google.com/p/test/issues/detail?id=456), but must link to old one.
+
+**IN HTML**
+
+This is [issue 123](https://code.google.com/p/test/issues/detail?id=123), auto-linked.
+This would be [issue 456](https://code.google.com/p/test/issues/detail?id=456), but must link to old one.
+
+==== Revisions
+
+[Revision 111605](https://code.google.com/p/test/source/detail?r=111605).
+
+rev111612.
+
+**IN HTML**
+
+<span>
+<a href='https://code.google.com/p/test/source/detail?r=111605'>Revision 111605</a>.<br>
+<br>
+rev111612.<br>
+</span>
+
+==== Plugins
+
+<a href='Hidden comment: 
+This text will be removed from the rendered page.
+'></a>
+
+(TODO: Link to Google+ page.)
+
+<a href='http://www.youtube.com/watch?feature=player_embedded&v=FiARsQSlzDc' target='_blank'><img src='http://img.youtube.com/vi/FiARsQSlzDc/0.jpg' width='425' height=344 /></a>
+
+<span>
+<a href='Hidden comment: 
+This text will be removed from the rendered page.
+'></a><br>
+<br>
+(TODO: Link to Google+ page.)<br>
+<br>
+<a href='http://www.youtube.com/watch?feature=player_embedded&v=FiARsQSlzDc' target='_blank'><img src='http://img.youtube.com/vi/FiARsQSlzDc/0.jpg' width='425' height=344 /></a><br>
+</span>
+
+==== Variables
+
+%%notdefined%%
+
+(TODO: Replace with username.)
+
+(TODO: Replace with email address.)
+
+test
+
+**IN HTML** (with additional variable magic)
+
+<span>
+%%notdefined%%<br>
+<br>
+(TODO: Replace with username.)<br>
+<br>
+(TODO: Replace with email address.)<br>
+<br>
+test<br>
+<br>
+this is a var!<br>
+</span>
+
+
+## All done!
+
+Hope you enjoyed.
